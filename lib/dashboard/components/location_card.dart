@@ -3,15 +3,17 @@ import '../../utils/comons/custom_switch.dart';
 import '../../utils/const/app_colors_const/app_colors_const.dart';
 
 class BookingLocationCard extends StatefulWidget {
-  const BookingLocationCard(
+  BookingLocationCard(
       {Key? key,
       required this.address,
       this.iconData = Icons.directions_bus_filled_outlined,
+      required this.onTap,
       this.isReturnRequired = false})
       : super(key: key);
   final String address;
   final IconData iconData;
   final bool isReturnRequired;
+  Function() onTap;
   @override
   State<BookingLocationCard> createState() => _BookingLocationCardState();
 }
@@ -49,12 +51,14 @@ class _BookingLocationCardState extends State<BookingLocationCard> {
             const SizedBox(
               width: 14,
             ),
-            Text(
-              widget.address,
-              style: const TextStyle(
-                
-                  color: AppColorConst.kAppPrimaryColor,
-                  fontWeight: FontWeight.bold),
+            InkWell(
+              onTap: widget.onTap,
+              child: Text(
+                widget.address,
+                style: const TextStyle(
+                    color: AppColorConst.kAppPrimaryColor,
+                    fontWeight: FontWeight.bold),
+              ),
             ),
             const SizedBox(
               width: 100,

@@ -13,6 +13,7 @@ class DashbaordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       bottomNavigationBar: const AppButtonNav(),
       body: Column(
         children: [
