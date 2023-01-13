@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:intern_task/utils/const/app_const/app_const.dart';
-
 import '../utils/comons/app_button_nav.dart';
+import '../utils/const/app_const/app_const.dart';
 import 'components/booking_locationwidget.dart';
 import 'components/location_card_info_widget.dart';
 import 'components/primary_dasboardcard.dart';

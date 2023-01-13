@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:intern_task/utils/const/app_colors_const/app_colors_const.dart';
-import 'package:intern_task/utils/const/app_const/app_const.dart';
+
+
+import '../../utils/const/app_colors_const/app_colors_const.dart';
+import '../../utils/const/app_const/app_const.dart';
 
 class TitleSection extends StatelessWidget {
   const TitleSection({Key? key, required this.title, required this.onPressed})

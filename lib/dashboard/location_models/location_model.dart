@@ -1,4 +1,6 @@
-import 'package:intern_task/utils/const/app_images/app_const_image.dart';
+
+
+import '../../utils/const/app_images/app_const_image.dart';
 
 class LocationModel {
   final String locationImage;

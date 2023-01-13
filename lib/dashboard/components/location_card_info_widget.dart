@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:intern_task/dashboard/location_models/location_model.dart';
-import 'package:intern_task/utils/const/app_colors_const/app_colors_const.dart';
-import 'package:intern_task/utils/const/app_const/app_const.dart';
+
+
+import '../../utils/const/app_colors_const/app_colors_const.dart';
+import '../../utils/const/app_const/app_const.dart';
+import '../location_models/location_model.dart';
 
 class LocationCardInfo extends StatelessWidget {
   const LocationCardInfo({Key? key, required this.data}) : super(key: key);

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:intern_task/utils/const/app_colors_const/app_colors_const.dart';
-
 import '../../utils/comons/custom_switch.dart';
+import '../../utils/const/app_colors_const/app_colors_const.dart';
 
 class BookingLocationCard extends StatefulWidget {
   const BookingLocationCard(
