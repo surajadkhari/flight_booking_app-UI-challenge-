@@ -5,7 +5,7 @@ class AppConst {
   static const String kpopularRoute = "Popular Routes";
   static const String kseeAll = "See all";
   static const String kfrom = "From";
-  static const String kHome = "Heom";
+  static const String kHome = "Home";
   static const String kExplore = "Explore";
   static const String kMyticket = "My Ticket";
   static const String kProfile = "Profile";
