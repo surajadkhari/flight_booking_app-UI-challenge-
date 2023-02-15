@@ -15,32 +15,34 @@ class DashbaordScreen extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       bottomNavigationBar: const AppButtonNav(),
-      body: Column(
-        children: [
-          Stack(
-            clipBehavior: Clip.none,
-            children: const [
-              PrimaryDashboardCard(),
-              BookingLocationWidget(),
-            ],
-          ),
-          TitleSection(
-            title: AppConst.kpopularRoute,
-            onPressed: () {},
-          ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                ...LocationModel.locationList.map(
-                  (e) => LocationCardInfo(
-                    data: e,
-                  ),
-                ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Stack(
+              clipBehavior: Clip.none,
+              children: const [
+                PrimaryDashboardCard(),
+                BookingLocationWidget(),
               ],
             ),
-          ),
-        ],
+            TitleSection(
+              title: AppConst.kpopularRoute,
+              onPressed: () {},
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  ...LocationModel.locationList.map(
+                    (e) => LocationCardInfo(
+                      data: e,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

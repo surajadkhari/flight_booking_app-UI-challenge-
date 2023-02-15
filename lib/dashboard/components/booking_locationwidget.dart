@@ -56,14 +56,14 @@ class _BookingLocationWidgetState extends State<BookingLocationWidget> {
     double screenW = MediaQuery.of(context).size.width;
     double screenH = MediaQuery.of(context).size.height;
     return Padding(
-      padding: EdgeInsets.only(top: screenH * 0.226),
+      padding: EdgeInsets.only(top: screenH * 0.25),
       child: Container(
-        padding: const EdgeInsets.only(top: 22),
+        padding: const EdgeInsets.only(top: 10),
         decoration: BoxDecoration(
             color: AppColorConst.kAppWhiteColor,
             borderRadius: BorderRadius.circular(20)),
-        margin: const EdgeInsets.only(left: 16, right: 16),
-        height: screenH * 0.456,
+        margin: const EdgeInsets.only(left: 14, right: 14),
+        height: screenH * 0.48,
         width: screenW,
         child: SingleChildScrollView(
           child: Column(
@@ -72,7 +72,7 @@ class _BookingLocationWidgetState extends State<BookingLocationWidget> {
                 clipBehavior: Clip.none,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 32),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: TextFormField(
                       style: const TextStyle(
                           color: AppColorConst.kAppPrimaryColor),
@@ -130,7 +130,7 @@ class _BookingLocationWidgetState extends State<BookingLocationWidget> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 32, vertical: 10),
+                        horizontal: 10, vertical: 10),
                     child: TextFormField(
                       style: const TextStyle(
                           color: AppColorConst.kAppPrimaryColor),
